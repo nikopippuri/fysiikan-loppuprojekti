@@ -22,12 +22,12 @@ Käynnistä sovellus jollakin seuraavista tavoista:
 
 ### Vaihtoehto 1: Python moduulina (suositeltu)
 ```bash
-python -m streamlit run lopputyo.py
+python -m streamlit run https://raw.githubusercontent.com/nikopippuri/fysiikan-loppuprojekti/refs/heads/main/lopputyo.py
 ```
 
 ### Vaihtoehto 2: Streamlit-komennolla (jos streamlit on PATH:ssa)
 ```bash
-streamlit run lopputyo.py
+streamlit run https://raw.githubusercontent.com/nikopippuri/fysiikan-loppuprojekti/refs/heads/main/lopputyo.py
 ```
 
 Sovellus avautuu automaattisesti selaimessa osoitteessa `http://localhost:8501`
