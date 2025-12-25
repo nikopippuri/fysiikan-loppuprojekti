@@ -2,6 +2,10 @@
 
 Tämä Streamlit-sovellus laskee askelten määrän kiihtyvyysdatan perusteella ja näyttää reitin kartalla GPS-datan avulla.
 
+## Screenshots
+
+![Sovelluksen näkymä](image.png)
+
 ## Kloonaus
 
 Kloonaa repositorio paikalliseen kansioon:
