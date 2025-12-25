@@ -2,6 +2,25 @@
 
 Tämä Streamlit-sovellus laskee askelten määrän kiihtyvyysdatan perusteella ja näyttää reitin kartalla GPS-datan avulla.
 
+## Kloonaus
+
+Kloonaa repositorio paikalliseen kansioon:
+
+SSH (jos sinulla on SSH-avaimet konfiguroitu):
+```bash
+git clone git@github.com:nikopippuri/fysiikan-loppuprojekti.git
+```
+
+HTTPS:
+```bash
+git clone https://github.com/nikopippuri/fysiikan-loppuprojekti.git
+```
+
+Siirry projektikansioon:
+```bash
+cd fysiikan-loppuprojekti
+```
+
 ## Asennus
 
 1. Varmista, että sinulla on Python asennettuna (versio 3.8 tai uudempi)
