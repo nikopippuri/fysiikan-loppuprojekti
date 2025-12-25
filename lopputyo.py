@@ -9,7 +9,7 @@ from scipy.signal import butter, filtfilt, find_peaks, periodogram
 
 # read the CSV file into a DataFrame
 # Use relative path
-csv_path = "Linear Acceleration.csv"
+csv_path = "https://github.com/nikopippuri/fysiikan-loppuprojekti/blob/main/Linear%20Acceleration.csv"
 df = pd.read_csv(csv_path)
 
 # display title and description in Streamlit app
@@ -125,7 +125,7 @@ st.write(f'**Askeleiden kokonaismäärä on {int(steps)} askelta**, Fourier-anal
 from math import radians, cos, sin, asin, sqrt
 
 # read the GPS location data from CSV file
-location_csv_path = "Location.csv"
+location_csv_path = "https://github.com/nikopippuri/fysiikan-loppuprojekti/blob/main/Location.csv"
 df = pd.read_csv(location_csv_path)
 
 # define haversine function to calculate distance between two GPS coordinates
