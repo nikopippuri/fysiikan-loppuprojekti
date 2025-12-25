@@ -9,15 +9,16 @@ from scipy.signal import butter, filtfilt, find_peaks, periodogram
 
 # read the CSV file into a DataFrame
 # Use relative path
-csv_path = "https://github.com/nikopippuri/fysiikan-loppuprojekti/blob/main/Linear%20Acceleration.csv"
+csv_path = "https://raw.githubusercontent.com/nikopippuri/fysiikan-loppuprojekti/main/Linear%20Acceleration.csv"
 df = pd.read_csv(csv_path)
 
 # display title and description in Streamlit app
-st.title("Askelten laskenta kiihtyvyysdatan perusteella ja reitin näyttäminen kartalla")
-st.write("Keskinopeus on laskettu GPS-paikannusdatan perusteella.")
-
-
-
+st.title("Askel- ja liikeanalyysi sensoridatan perusteella")
+st.write(
+    "Sovellus laskee askelmäärän suodatetusta kiihtyvyysdatasta, sekä Fourier-analyysin avulla, "
+    "määrittää keskinopeuden ja kuljetun matkan GPS-datasta sekä arvioi askelpituuden. "
+    "Tulokset esitetään numeerisesti ja havainnollistetaan kuvaajilla, sekä reitillä kartalla."
+)
 
 # define filter functions
 
@@ -125,7 +126,7 @@ st.write(f'**Askeleiden kokonaismäärä on {int(steps)} askelta**, Fourier-anal
 from math import radians, cos, sin, asin, sqrt
 
 # read the GPS location data from CSV file
-location_csv_path = "https://github.com/nikopippuri/fysiikan-loppuprojekti/blob/main/Location.csv"
+location_csv_path = "https://raw.githubusercontent.com/nikopippuri/fysiikan-loppuprojekti/main/Location.csv"
 df = pd.read_csv(location_csv_path)
 
 # define haversine function to calculate distance between two GPS coordinates
