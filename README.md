@@ -6,7 +6,21 @@ Tämä Streamlit-sovellus laskee askelten määrän kiihtyvyysdatan perusteella 
 
 1. Varmista, että sinulla on Python asennettuna (versio 3.8 tai uudempi)
 
-2. Asenna tarvittavat kirjastot:
+2. **Luo virtuaaliympäristö (suositeltu):**
+   
+   Windows:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   
+   Linux/Mac:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Asenna tarvittavat kirjastot:
    ```bash
    pip install -r requirements.txt
    ```
@@ -17,6 +31,18 @@ Tämä Streamlit-sovellus laskee askelten määrän kiihtyvyysdatan perusteella 
    ```
 
 ## Käyttö
+
+**Muista aktivoida virtuaaliympäristö ennen käynnistämistä!**
+
+Windows:
+```bash
+venv\Scripts\activate
+```
+
+Linux/Mac:
+```bash
+source venv/bin/activate
+```
 
 Käynnistä sovellus jollakin seuraavista tavoista:
 
@@ -31,6 +57,11 @@ streamlit run https://raw.githubusercontent.com/nikopippuri/fysiikan-loppuprojek
 ```
 
 Sovellus avautuu automaattisesti selaimessa osoitteessa `http://localhost:8501`
+
+**Poistu virtuaaliympäristöstä kun olet valmis:**
+```bash
+deactivate
+```
 
 ## Riippuvuudet
 
